@@ -2,76 +2,68 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="Description" CONTENT="Formatura">
 		<title>Central de Atendimento</title>
-		<meta name="description" content="" />
-		<meta name="author" content="jb99824" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link href="../Estilos/Estilo-do-site.css" type="text/css" rel="stylesheet" />		
 		<link href="../Script/Script.js" type="text/javascript"/>	
 	</head>
 	<body>
-		<form name="input"
-		action="html_form_action.asp"
-		method="get">
-		<h1>Fale Conosco</h1>
-		<tr>
-			<td>Nome completo:</td>
-				<td>
-				<input class="campo" type="text" maxlength="100" require="Informe seu Nome completo" value="" size="43" name="nome">
-			</td>
-		</tr>
-		<br />
-		<tr>
-			<td>Email:</td>
-				<td>
-				<input class="campo" type="text" maxlength="100" require="O E-mail informado é inválido" function="isEmail" value="" size="43" name="email">
-			</td>
-		</tr>
-		<br />
-		<tr>
-		<td>Assunto:</td>
-			<td>
-				<select id="id_grupo" require="Selecione a Área de Interesse para a qual sua mensagem será enviada" style="width:274px;" name="id_grupo">
-					<option selected="selected" value="">Selecione</option>
-					<option value="1">Sugestão</option>
-					<option value="2">Reclamação</option>
-					<option value="3">Outros</option>
-					
-				</select>
-			</td>
-		</tr>
-		<br />
-		<tr>
-			<td valign="top">
-				Mensagem:
-				(max: 500 caracteres)
-				<br> 
-				(usados:
-				<span id="chars_used">0</span>
-				caracteres)
-			</td>
-			<td>
-				<textarea id="texto" onchange="countChars(this, event)" require="Você se esqueceu de escrever a mensagem" value="" maxchar="50" rows="5" cols="40" name="texto"></textarea>
-		</td>
-		<br />
-		<tr>
-			<td>&nbsp;</td>
-			<td align="right">
-				<div style="position:relative; left:-90; top:-2px">
-					<div style="position:relative; left:-90; top:-2px">
-					<input type ="submit" value ="Enviar Agora!">
-				</div>
-			</td>										
-		</tr>
-		</form>
-		<footer>
-				<p>
-					&copy; Copyright  by In_Formar
-				</p>
-		</footer>
-	</body>
+		<header>
+			<h1 class="cabeçalho">Fale conosco</h1>
+		</header>
+		<form name="input" action="html_form_action.asp" method="get"> 
+		<fieldset class="caixa">  
+				<tr>
+					<td>Nome completo:</td>
+						<td>
+						<input class="campo" type="text" maxlength="100" require="Informe seu Nome completo" value="" size="43" name="nome">
+					</td>
+				</tr>
+				<br />
+				<tr>
+					<td>Email:</td>
+						<td>
+						<input class="campo" type="text" maxlength="100" require="O E-mail informado é inválido" function="isEmail" value="" size="43" name="email">
+					</td>
+				</tr>
+				<br />
+				<tr>
+				<td>Assunto:</td>
+					<td>
+						<select id="id_grupo" require="Selecione a Área de Interesse para a qual sua mensagem será enviada" style="width:274px;" name="id_grupo">
+							<option selected="selected" value="">Selecione</option>
+							<option value="1">Sugestão</option>
+							<option value="2">Reclamação</option>
+							<option value="3">Outros</option>
+							
+						</select>
+					</td>
+				</tr>
+				<br />
+				<tr>
+					<td valign="top">
+						Mensagem:
+						(max: 500 caracteres)
+						<br> 
+						(usados:
+						<span id="chars_used">0</span>
+						caracteres)
+					</td>
+					<td>
+						<textarea id="texto" onchange="countChars(this, event)" require="Você se esqueceu de escrever a mensagem" value="" maxchar="50" rows="5" cols="40" name="texto"></textarea>
+				</td>
+				<br />
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right">
+						<div style="position:relative; left:-90; top:-2px">
+							<div style="position:relative; left:-90; top:-2px">
+							<input type ="submit" value ="Enviar Agora!">
+						</div>
+					</td>										
+				</tr>
+			</form>
+		</fildset>
+		
+		</body>
 </html>
