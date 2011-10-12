@@ -9,7 +9,6 @@
 	height: 80px;
 }
 
-
  body {
 	background-color: #C0D9D9;
 	margin: 0px 0px 0px 0px;	 
@@ -30,6 +29,14 @@ h2,h3{
 	text-align:center;
 }
 
+.textoformulario{
+	font-family:"comic sans ms";
+	font-size:12px;
+	font-weight: bold;
+	color:blue;
+	
+}
+
 .caixa1{
 	float:left;
 	width: 45%;
@@ -48,3 +55,80 @@ h2,h3{
 	height: 280px;
 	}
 
+.caixa3{
+	float: none;
+	width: 97.5%;
+	padding-left : 1em;	
+	border: 3px solid #F0F8FF;	
+	margin-right: 10px;
+	height: 530px;
+	}
+	
+p#texto{
+	font-family: "comic sans ms";
+	font-size: 14px;
+	margin: 10px 15px 10px 15px;
+	line-height: 140%;
+	text-align: justify;
+}
+
+label#texto{
+	font-family: "comic sans ms";
+	font-size: 12px;
+	font-weight: bold;
+	color:blue;
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	float: left;
+	width: 100%;
+	background-color:#EDEDED;
+	list-style:none;
+	font:80% Tahoma;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+	padding: 2px 10px;
+	float:left;
+}
+
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #000066;
+}
+
+#menuSite ul {
+	padding:0px;
+	margin:0px;
+	float: left;
+	width: 100%;
+	background-color:#000066;
+	list-style:none;
+	font:80% Tahoma;
+}
+
+#menuSite ul li { display: inline; }
+
+#menuSite ul li a {
+	background-color:#000066;
+	color: #FFF;
+	text-decoration: none;
+	border-bottom:3px solid #000066;
+	padding: 2px 10px;
+	float:left;
+}
+
+#menuSite ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #000066;
+}

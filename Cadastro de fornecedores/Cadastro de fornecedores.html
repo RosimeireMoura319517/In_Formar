@@ -5,24 +5,78 @@
 		<meta name="Description" CONTENT="Formatura">
 		<title>Cadastro de Fornecedores</title>	
 		<link href="../Estilos/Estilo-do-site.css" type="text/css" rel="stylesheet" />		
-		<link href="../Script/Script.js" type="text/javascript"/>	
-			
+		<link href="../Script/Script.js" type="text/javascript"/>				
 	</head>
 	<body>
 		<<header>
-			<h1 class="cabeçalho">Cadastro de Fornecedores</h1>
-		</header>	 
-			<form id="form1" name="form1" method="post" action="cadforn.php"> 
-  				<fieldset> 
-  					<legend>Cadastro</legend> 
-  						<label for="nome">Nome:</label> 
-  						<input type="text" name="nome" id="nome" /> 
-  						<br /> 
-  						<label for="fone">Telefone:</label> 
-  						<input type="text" name="fone" id="fone" /> 
-  						<br /> 
-  						<label></label> 
-  						<input name="enviar" type="submit" value="Cadastrar" /> 
+			<h1 class="cabeçalho">In_Formar</h1>
+		</header>	
+		<div id="menu">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="fornecedores.html">Fornecedores</a></li>
+					<li><a href="#">Comiss&otilde;es</a></li>
+					<li><a href="#">Servi&ccedil;os</a></li>
+					<li><a href="#">Cota&ccedil;&otilde;es</a></li>
+					<li><a href="fotosevideos.html">Fotos e v&iacute;deos</a></li>
+					<li><a href="login.html">Sair</a></li>
+				</ul>
+			</div>
+			</br>
+			</br>
+			</br>
+			<form id="form1" name="form1" method="post" action="In-Formar"> 
+  				<fieldset class="caixa3"> 
+  					<h1>Cadastro de Fornecedores</h1> 
+  							</br>
+  						<label for="nome" class="textoformulario"> Dados da Empresa (Razão Social):</label>
+  							<input type="text" size="50" name="nome" id="nome" /> 
+  							<br/> 
+  							<br/>
+  						<label id="texto">Tipo de serviço</label>
+						<select id="selTipoServico">
+							<option>Cerimonial</option>
+							<option>Festa</option>	
+							<option>DJ</option>
+							<option>Banda Musical</option>
+							<option>Serviço de Som</option>
+							<option>Decoração</option>
+						</select>
+						<br><br>
+  						<label for="fone" class="textoformulario">Telefone:</label> 
+  							<input type="text" name="fone" id="fone" /> 
+  							<br />
+  							<br /> 
+  						<label for="endereço" class="textoformulario">Logradouro (Rua, Av.):</label> 
+  							<input type="text" maxlength="100" required="Informe endereço completo" value="" size="43" name="endereço" />
+  							<br />
+  							<br />
+  						<label for="numero" class="textoformulario">Número:</label>
+							<input type="number" required="Informe número do endereço"/>
+  							<br />
+  							<br />
+  						<label for="complemento" class="textoformulario">Complemento:</label>
+							<input type=""/>
+  							<br />
+  							<br />
+  						<label for="bairro" class="textoformulario">Bairro:</label>
+							<input class="campo" type="text" maxlength="100" required="Informe bairro" value="" size="43" name="nome" />	
+  							<br />
+  							<br />
+  						<label for="municipio" class="textoformulario">Município:</label>
+							<input class="campo" type="text" maxlength="100" required="Informe munícipio" value="" size="43" name="nome" />	
+  							<br />
+  							<br />
+  						<label for="cep" class="textoformulario">CEP:</label>
+							<input class="campo" type="number" required="Informe número do endereço"/>
+							<br />
+  							<br />
+						<label for="email" class="textoformulario">Email:</label>
+							<input class="campo" type="text" maxlength="100" require="O E-mail informado é inválido" function="isEmail" value="" size="43" name="email">
+  							<br />
+  							<br />
+  							<br />
+  						<center><input name="enviar" type="submit" value="Cadastrar" /></center> 
   				</fieldset> 
 			</form> 
 	</body>
