@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" CONTENT="Formatura">
+		<title>Cadastro de comissao de formaturas</title>
+		
+		<link href="../Estilos/Estilo-do-site.css" type="text/css" rel="stylesheet" />		
+		<link href="../Script/Script.js" type="text/javascript"/>	
+			
+		<form name="input" action="html_form_action.asp" method="get">
+	</head>
+	<body>
+		<header>
+			<h1 class="cabeçalho">Cadastro de comissao de formaturas</h1>	
+		</header>
+		<div>
+			<nav>
+				<fieldset class="caixa"> 
+				<p>
+					<td>Data de formatura:</td>
+						<input class="campo" type="date" required="Informe data de previsão de formatura"/>
+				</p>
+				<p>
+					<td>Nome Curso:</td>
+						<td>
+							<input class="campo" type="text" maxlength="100" required="Informe nome da curso" value="" size="43" name="nome" />	
+						</td>
+				</p>
+				<p>
+					<td>Nome do representante:</td>
+						<td>
+							<input class="campo" type="text" maxlength="100" required="Informe nome do representante" value="" size="43" name="nome" />	
+						</td>
+				</p>
+				<p>
+					<td>E-mail:</td>
+						<td>
+							<input class="campo" type="email" maxlength="100" required="Informe e-mail da comissão" value="" function="isEmail" size="43" name="nome" />	
+						</td>
+				</p>
+				<p>
+					<td>Senha:</td>
+						<td>
+							<input class="campo" type="password" maxlength="20" required="Senha de no max 20 caracteres" value="" size="20"/>	
+						</td>
+				</p>
+				
+				</fieldset>
+				<h2> Comissão de Formatura</h2>
+				<fieldset class="caixa">
+				<ls id=1>1)
+					<p>
+						<td>Nome Completo:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" required="Informe nome completo" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Cargo:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" required="Informe cargo" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Logradouro(Rua, Av.):</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" required="Informe endereço completo" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Número:</td>
+							<input class="campo" type="number" required="Informe número do endereço"/>
+					</p>
+					<p>
+						<td>Complemento:</td>
+							<input class="campo" type=""/>
+					</p>
+					<p>
+						<td>Bairro:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" required="Informe bairro" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Município:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" required="Informe munícipio" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>CEP:</td>
+							<input class="campo" type="number" required="Informe número do endereço"/>
+					</p>
+					<p>
+						<td>Email:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" require="O E-mail informado é inválido" function="isEmail" value="" size="43" name="email">
+							</td>
+					</p>
+					<p>
+						<td>Telefone:</td>
+							<input class="campo" type="number" required="Informe telefone válido"/>
+					</p>
+					<p>
+						<td>Celular:</td>
+							<input class="campo" type="number" required="Informe telefone válido"/>
+					</p>
+				</ls>
+				<br />	
+				</fieldset>
+				<fieldset class="caixa">
+				<ls id=2> 2)
+					<p>
+						<td>Nome Completo:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" r value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Cargo:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100"  value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Logradouro(Rua, Av.):</td>
+							<td>
+								<input class="campo" type="text" maxlength="100"  value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Número:</td>
+							<input class="campo" type="number" />
+					</p>
+					<p>
+						<td>Complemento:</td>
+							<input class="campo" type=""/>
+					</p>
+					<p>
+						<td>Bairro:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>Município:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" value="" size="43" name="nome" />	
+							</td>
+					</p>
+					<p>
+						<td>CEP:</td>
+							<input class="campo" type="number" />
+					</p>
+					<p>
+						<td>Email:</td>
+							<td>
+								<input class="campo" type="text" maxlength="100" function="isEmail" value="" size="43" name="email">
+							</td>
+					</p>
+					<p>
+						<td>Telefone:</td>
+							<input class="campo" type="number" />
+					</p>
+					<p>
+						<td>Celular:</td>
+							<input class="campo" type="number"/>
+					</p>
+				</ls>
+				</fieldset>
+				<fieldset class="caixa">
+				<br />
+				A Comissão de Formatura autoriza o fornecimento destas informações à empresas eventualmente interessadas em fazer contato com a Comissão.
+				<br />
+				<input type="radio" name="nome" value="autoriza" checked> Autoriza
+				<br />
+				<input type="radio" name="nome" value="nao autoriza"> Não Autoriza
+				<br>
+				<input type ="submit"
+				value ="Enviar Agora!">
+				</fieldset>
+			</form>
+			</nav>
+			<div></div>
+			</div>
+	</body>
+</html>
