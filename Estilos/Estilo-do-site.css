@@ -64,6 +64,12 @@ h2,h3{
 	height: 530px;
 	}
 	
+.caixa4{
+	width: 60%;
+	border: 3px solid #F0F8FF;	
+	margin: 0% 20% 0% 20%;
+	}
+		
 p#texto{
 	font-family: "comic sans ms";
 	font-size: 14px;
